@@ -9,10 +9,6 @@
                             <div class="float-left">
                                 <h3><?= $value->topic;?></h3>
                             </div>
-                            <div class="float-right">
-                                <a href="<?= base_url()?>delPost/<?= $value->id;?>"><button class="btn btn-sm btn-danger">delete</button></a>
-                            </div>
-                            
                         </div>
                         <div class="card-body notice_box">
                             <div class="text-center">
