@@ -495,6 +495,19 @@ header .menu-toggle {
   padding-top: 20px;
 }
 
+.del_btn{
+  padding:10px 10px;
+  background: rgb(216, 80, 80);
+  border-radius: 5px;
+  border: none;
+  color:white;
+  font-weight: 600;
+}
+
+.del_btn:hover{
+  background:rgb(233, 11, 11);
+}
+
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 934px) {

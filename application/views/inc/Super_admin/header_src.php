@@ -17,7 +17,7 @@
             rel="stylesheet">
 
         <!-- Custom Styling -->
-        <link rel="stylesheet" href="<?php echo base_url('assets/Super_admin/css/style.css')?>">
+        <link rel="stylesheet" href="<?php echo base_url('assets/Super_admin/css/Style.css')?>">
 
         <!-- Admin Styling -->
         <link rel="stylesheet" href="<?php echo base_url('assets/Super_admin/css/admin.css')?>">

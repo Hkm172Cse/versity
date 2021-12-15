@@ -16,7 +16,7 @@ class Post_Controller extends CI_Controller {
 
     public function delete_Post($id){
         if($this->Post_Model->delete($id)){
-            redirect('notice_board');
+            redirect('catch_all_post');
         }
     }
 

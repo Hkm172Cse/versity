@@ -60,6 +60,7 @@ $route['delPost/(.+)']              = 'Post_Controller/delete_Post/$1';
 $route['deleteBy_socialAdmin/(.+)'] = 'Social_Controller/deleteMethod/$1';
 $route['deleteBy_ludcAdmin/(.+)']   = 'LUDC_Controller/deleteMethod/$1';
 $route['deleteBy_luccAdmin/(.+)']   = 'LUCC_Controller/deleteMethod/$1';
+$route['catch_all_post']            = 'Author/catch_all_post';
 
 
 
