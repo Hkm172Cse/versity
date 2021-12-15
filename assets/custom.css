@@ -1,0 +1,30 @@
+.notic_img{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top:20px;
+    margin-bottom: 20px;
+    
+}
+.notice_box{
+    position: relative;
+    padding-bottom: 100px;
+}
+.notice_by{
+    position: absolute;
+    bottom: 30px;
+    right: 150px;
+}
+.post_man{
+    margin:0;
+    padding: 0;
+    font-size:16px;
+}
+.perosn_highlight{
+    font-weight: 600;
+    padding:0px;
+    margin:0px;
+}
+.describtion{
+    padding-bottom: 50px;
+}
