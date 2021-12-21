@@ -83,9 +83,10 @@ class LUDC_Controller extends CI_Controller {
                 $this->session->set_userdata('ludc_admin', $data['email']);
                 redirect('ludc_admin_panel');
             }
-        }else if($data['mytitle']=='group_member'){
+        }else if($data['group']=='LUDC'){
             if($this->LUCC_Model->isLogin($data)){
-                redirect('LUDC');
+                 $this->session->set_userdata('ludc_profile', $data['email']); 
+                 redirect('LUDC');
             }
         }
     }

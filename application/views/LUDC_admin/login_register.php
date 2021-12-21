@@ -13,7 +13,7 @@
             <img src="<?php echo base_url('assets/SignUP_Login/gp.png')?>">
         </div> 
 
-        <?= $this->session->flashdata('lucc_valid_email');?>
+        <?= $this->session->flashdata('reg_suc');?>
 
         <form id="login" action="<?= base_url()?>login_ludc_admin" method="post" class="input-group">
             <input type="email" name="email" class="input-field"  placeholder="Email" required>   
