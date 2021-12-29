@@ -63,6 +63,7 @@ $route['deleteBy_luccAdmin/(.+)']   = 'LUCC_Controller/deleteMethod/$1';
 $route['catch_all_post']            = 'Author/catch_all_post';
 
 $route['profile']                   = 'ludc_profile_controller/notice_board';
+$route['change_profile']            = 'ludc_profile_controller/change_profile_method';
 
 
 

@@ -14,6 +14,11 @@
             $result = $query_result->row();
             return $result;
         }
+
+        public function update($data){
+           
+            return $this->db->update('table_user', $data, array('id' => $data['id'])); 
+        }
         
 
 }
