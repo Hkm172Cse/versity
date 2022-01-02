@@ -80,9 +80,10 @@ class LUCC_Controller extends CI_Controller {
                 $this->session->set_userdata('lucc_admin', $data['email']);
                 redirect('lucc_admin_panel');
             }
-        }else if($data['mytitle']=='group_member'){
+        }else if($data['group']=='LUCC'){
             if($this->LUCC_Model->isLogin($data)){
-                redirect('LUCC');
+                 $this->session->set_userdata('lucc_profile', $data['email']); 
+                 redirect('LUCC');
             }
         }
     }

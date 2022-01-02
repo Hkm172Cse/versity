@@ -64,6 +64,8 @@ $route['catch_all_post']            = 'Author/catch_all_post';
 
 $route['profile']                   = 'ludc_profile_controller/notice_board';
 $route['change_profile']            = 'ludc_profile_controller/change_profile_method';
+$route['lucc_profile']              = 'lucc_profile_controller/notice_board';
+$route['lucc_change_profile']       = 'lucc_profile_controller/change_profile_method';
 
 
 

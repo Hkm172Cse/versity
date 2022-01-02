@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class ludc_profile_controller extends CI_Controller {
+class lucc_profile_controller extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
 
@@ -10,7 +10,7 @@ class ludc_profile_controller extends CI_Controller {
         $this->load->library('form_validation');
         $this->load->helper(array('form', 'url'));
 
-        if(!$this->session->has_userdata('ludc_profile')){
+        if(!$this->session->has_userdata('lucc_profile')){
             redirect('LUDC');
         }
 
@@ -28,9 +28,9 @@ class ludc_profile_controller extends CI_Controller {
     public function notice_board(){
         $data['header'] = $this->load->view('inc/notice/header', '', true);
         $data['footer'] = $this->load->view('inc/notice/footer_src', '', true);
-        $profile_info   = $this->session->userdata('ludc_profile');
+        $profile_info   = $this->session->userdata('lucc_profile');
         $data['profile_data'] = $this->LUDC_Model->profile_login($profile_info);
-        $this->load->view('LUDC_profile_view', $data);
+        $this->load->view('LUCC_profile_view', $data);
     }
 
     public function change_profile_method(){
@@ -66,7 +66,7 @@ class ludc_profile_controller extends CI_Controller {
                         $data['image'] = $config['upload_path'].$sdata['file_name'];
 
                         if($this->LUDC_Model->update($data)){
-                            redirect('profile');
+                            redirect('lucc_profile');
                         }
                        
                 }
