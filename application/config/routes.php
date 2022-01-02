@@ -67,6 +67,9 @@ $route['change_profile']            = 'ludc_profile_controller/change_profile_me
 $route['lucc_profile']              = 'lucc_profile_controller/notice_board';
 $route['lucc_change_profile']       = 'lucc_profile_controller/change_profile_method';
 
+$route['social_profile']            = 'social_profile_controller/notice_board';
+$route['social_change_profile']     = 'social_profile_controller/change_profile_method';
+
 
 
 

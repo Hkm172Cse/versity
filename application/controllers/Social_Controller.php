@@ -10,6 +10,7 @@ class Social_Controller extends CI_Controller {
         $this->load->library('form_validation');
         $this->load->Model('Author_Model');
         $this->load->Model('Social_Model');
+        $this->load->Model('LUCC_Model');
 		
 	}
 
@@ -56,9 +57,10 @@ class Social_Controller extends CI_Controller {
                 $this->session->set_userdata('social_admin', $data['email']);
                 redirect('social_admin_panel');
             }
-        }else if($data['mytitle']=='group_member'){
+        }else if($data['group']=='social_group'){
             if($this->LUCC_Model->isLogin($data)){
-                redirect('Social');
+                 $this->session->set_userdata('social_profile', $data['email']); 
+                 redirect('Social');
             }
         }
     }
