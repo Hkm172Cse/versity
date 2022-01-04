@@ -38,6 +38,7 @@ class social_profile_controller extends CI_Controller {
                $data['section'] = $this->input->post('section');
                $data['department'] = $this->input->post('department');
                $data['address'] = $this->input->post('address');
+               
                $data['email'] = $this->input->post('email');
                $data['contact'] = $this->input->post('mobile');
                
