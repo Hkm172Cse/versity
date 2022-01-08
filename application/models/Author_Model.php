@@ -30,6 +30,15 @@
             return $query->result();
         }
 
+        public function profileView($id){
+            $this->db->select('*');
+            $this->db->from('table_user');
+            $this->db->where('id', $id);
+            $query_result = $this->db->get();
+            $result = $query_result->row();
+            return $result;
+        }
+
         public function update($data){
             $id = $data['id'];
             return $this->db->update('table_user', $data, array('id' => $data['id'])); 

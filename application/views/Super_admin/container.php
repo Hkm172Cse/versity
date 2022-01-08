@@ -29,6 +29,7 @@
                             <th>Password</th>
                             <th>Group</th>
                             <th>Title</th>
+                            <th>profile<th>
                             <th colspan="2">Action</th>
                         </thead>
                         <tbody>
@@ -42,6 +43,7 @@
                                 <td><?php echo $value->password;?></td>
                                 <td><?php echo $value->group_name;?></td>
                                 <td><?php echo $value->title;?></td>
+                                <td><a href="<?php echo base_url()?>profive_view_superAdmin/<?= $value->id?>"><i class="fas fa-eye"></i></a></td>
                                 <td><a href="<?php echo base_url()?>editBy_SuperAdmin/<?= $value->id?>" class="edit">edit</a></td>
                                 <td><a onclick="delfunction()" href="<?php echo base_url()?>deleteBy_SuperAdmin/<?= $value->id?>" class="delete">delete</a></td>
                             </tr>

@@ -69,6 +69,7 @@ $route['lucc_change_profile']       = 'lucc_profile_controller/change_profile_me
 
 $route['social_profile']            = 'social_profile_controller/notice_board';
 $route['social_change_profile']     = 'social_profile_controller/change_profile_method';
+$route['profive_view_superAdmin/(.+)'] = 'Author/profileByid/$1';
 
 
 

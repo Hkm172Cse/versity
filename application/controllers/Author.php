@@ -12,6 +12,14 @@ class Author extends CI_Controller {
 		$this->load->model('Author_Model');
         $this->load->model('Post_Model');
 	}
+    public function profileByid($id){
+   
+        $data['header'] = $this->load->view('inc/notice/header', '', true);
+        $data['footer'] = $this->load->view('inc/notice/footer_src', '', true);
+        
+        $data['profile_data'] = $this->Author_Model->profileView($id);
+        $this->load->view('Super_admin/profileView', $data);
+    }
     public function catch_all_post(){
         $data['header_src'] = $this->load->view('inc/Super_admin/header_src', '', true);
         $data['main_menu'] = $this->load->view('inc/Super_admin/main_menu', '', true);
