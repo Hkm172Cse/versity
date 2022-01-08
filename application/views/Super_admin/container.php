@@ -30,6 +30,7 @@
                             <th>Group</th>
                             <th>Title</th>
                             <th>profile<th>
+                                
                             <th colspan="2">Action</th>
                         </thead>
                         <tbody>
