@@ -2,7 +2,7 @@
 <body>
     <section class="header">
         <nav>
-            <a href="index.html"><img src="<?php echo base_url('assets/LUDC/photos/LUDC2.png')?>" alt="" ></a>
+            <a href="#"><img src="<?php echo base_url('assets/LUDC/photos/LUDC2.png')?>" alt="" ></a>
             
             <div class="nav-links" id="navLinks">
                 <i class="fas fa-times" onclick="hideMenu()"></i>

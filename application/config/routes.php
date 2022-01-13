@@ -71,6 +71,16 @@ $route['social_profile']            = 'social_profile_controller/notice_board';
 $route['social_change_profile']     = 'social_profile_controller/change_profile_method';
 $route['profive_view_superAdmin/(.+)'] = 'Author/profileByid/$1';
 
+$route['super_admin_profile']         = 'admin_profile/super_admin_profile_Controller/index';
+$route['super_admin_change_profile']  = 'admin_profile/super_admin_profile_Controller/change_profile_method';
+$route['lucc_admin_profile']          = 'admin_profile/Lucc_admin_profile_Controller/index';
+$route['lucc_admin_change_profile']   = 'admin_profile/Lucc_admin_profile_Controller/change_profile_method';
+
+$route['ludc_admin_profile']          = 'admin_profile/Ludc_admin_profile_Controller/index';
+$route['ludc_admin_change_profile']   = 'admin_profile/Ludc_admin_profile_Controller/change_profile_method';
+$route['social_admin_profile']        = 'admin_profile/Social_admin_profile_Controller/index';
+$route['social_admin_change_profile'] = 'admin_profile/Social_admin_profile_Controller/change_profile_method';
+
 
 
 

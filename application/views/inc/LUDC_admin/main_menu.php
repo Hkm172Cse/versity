@@ -11,6 +11,7 @@
                         <i class="fa fa-chevron-down" style="font-size: .8em;"></i>
                     </a>
                     <ul>
+                    <li><a href="<?php echo base_url()?>ludc_admin_profile" class="logout">Profile</a></li>
                         <li><a href="<?php echo base_url()?>logout_lucc_admin" class="logout">Logout</a></li>
                         <li><a href="<?php echo base_url()?>homepage" class="logout">home</a></li>
                         
