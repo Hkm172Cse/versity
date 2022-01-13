@@ -29,6 +29,7 @@
                             <th>Password</th>
                             <th>Member of</th>
                             <th>title<th>
+                            <th>Profile</th>
                             <th colspan="2">Action</th>
                         </thead>
                         <tbody>
@@ -41,6 +42,7 @@
                                 <td>********</td>
                                 <td><?php echo $value->group_name;?></td>
                                 <td id="admin"><?php echo $value->title;?></td>
+                                <td><i class="fas fa-eye"></i></td>
                                 <td><a href="#" class="edit">edit</a></td>
                                 <td><a href="#" class="delete">delete</a></td>    
                             </tr>
@@ -56,6 +58,7 @@
                                 <td><?php echo $value->password;?></td>
                                 <td><?php echo $value->group_name;?></td>
                                 <td id="admin"><?php echo $value->title;?></td>
+                                <td><a href="<?php echo base_url()?>profive_view_superAdmin/<?= $value->id?>"><i class="fas fa-eye"></i></a></td>
                                 <td><a href="<?= base_url()?>lucc_admin_edit/<?= $value->id;?>" class="edit">edit</a></td>
                                 <td><a onclick="delfunction()" href="<?php echo base_url()?>deleteBy_luccAdmin/<?= $value->id?>" class="delete">delete</a></td>
                             </tr>
