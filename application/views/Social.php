@@ -2,7 +2,7 @@
 <body>
     <section class="header">
         <nav>
-            <a href="#"><img src="<?= base_url('assets/LUCC/photos/jk.png')?>" alt="" ></a>
+            <a href="#"><img class="social_logo" src="<?= base_url('assets/LUCC/photos/jk.png')?>" alt="" ></a>
             
             <div class="nav-links" id="navLinks">
                 <i class="fas fa-times" onclick="hideMenu()"></i>
@@ -10,7 +10,7 @@
                     <li><a href="<?php echo base_url()?>homepage">HOME</a></li>
                     <li><a href="<?php echo base_url()?>social_login_register">SIGNUP & LOGIN</a></li>
                     <li><a href="<?= base_url()?>notice_board">NOTICE</a></li>
-                    <li><a href="<?= base_url()?>social_profile">Profile</a></li>
+                    <li><a href="<?= base_url()?>social_profile">PROFILE</a></li>
                 </ul>
             </div>
             <i class="fas fa-bars" onclick="showMenu()"></i>
@@ -71,7 +71,7 @@
 
 <div class="row">
     <div class="campus-col">
-        <img src="photos/LUSSC.jpg" alt="">
+        <img src="<?= base_url('assets/LUCC/photos/LU2.jpg')?>" alt="">
         <div class="layer">
             <h3>
                 LU SSC TEAM
@@ -79,7 +79,7 @@
         </div>
     </div>
     <div class="campus-col">
-        <img src="photos/3.jpg" alt="">
+        <img src="<?= base_url('assets/LUCC/photos/LUSSC.jpg')?>" alt="">
         <div class="layer">
             <h3>
                LU SSC CAMPUS

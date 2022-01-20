@@ -10,7 +10,7 @@
                     <li><a href="<?php echo base_url()?>homepage">HOME</a></li>
                     <li><a href="<?php echo base_url()?>lucc_login_register">SIGNUP & LOGIN</a></li>
                     <li><a href="<?= base_url()?>notice_board">NOTICE</a></li>
-                    <li><a href="<?= base_url()?>lucc_profile">Profile</a></li>
+                    <li><a href="<?= base_url()?>lucc_profile">PROFILE</a></li>
                 </ul>
             </div>
             <i class="fas fa-bars" onclick="showMenu()"></i>
